@@ -1,339 +1,130 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
+
 <html lang="ru">
+
 <head>
+
     <meta charset="UTF-8">
-    <title>Die! Please, die and release me...</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Каталог</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
-<body>
-<table border="0" width="900" cellpadding="0" cellspacing="0" align="center" bgcolor="#99ff99">
-    <tr>
-        <td width="150" align="center">
-            <img src="../img/logo.png" width="150px" />
-        </td>
-        <td width="50%"><H1 align="center" id="0">Магазин одежды и обуви</H1></td>
-        <td width="200">
-            <table  cellpadding="5"  width="100%">
-                <tr>
-                    <td  ><input type="text" value="логин" style="width: 130px"></td>
-                </tr>
-                <tr>
-                    <td ><input type="password" value="логин" style="width: 130px" ></td>
-                </tr>
-                <tr>
-                    <td ><input type="submit" value="войти">&nbsp;</td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
+<body id="top">
 
-<table border="0" width="900" cellpadding="5" cellspacing="0" align="center" bgcolor="#77ff77">
-    <tr>
-        <td align="center"><a href="">раздел 1</a></td>
-        <td align="center"><a href="">раздел 2</a></td>
-        <td align="center"><a href="">раздел 3</a></td>
-        <td align="center"><a href="">раздел 4</a></td>
-    </tr>
-</table>
-<BR>
+  <header class="site-header" role="banner">
 
-<!-------------------------------------------------------------------->
+    <div class="container">
 
-<table border="0" width="900" cellpadding="5" cellspacing="0" align="center">
-    <tr>
-        <td width="150" cellpadding="5" valign="top" align="center">
-            <div style="position: sticky; top: 20px; ">
-                <a href="index.html">Главная</a><br>
-                <a href="./catalog.html">Каталог</a><br>
-                <a href="./about.html">О нас</a><br>
-                <a href="./contacts.html">Контакты</a>
+        <div class="brand"><a href="catalog.html"><img src="../img/logo.png" alt="Logo"></a></div>
+
+        <form class="header-search" action="catalog.html" method="get" role="search" aria-label="Поиск">
+
+            <div class="input-group">
+
+                <input class="form-control header-input" name="q" type="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+
+                <button class="btn btn-light header-search-btn" type="submit" aria-label="Поиск">
+
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+                </button>
+
             </div>
-        </td>
-        <td><H1 align="center">Каталог</H1>
-            <table width="100%" border="1" align="center" style="border: none">
-                <tr>
-                    <td colspan=3 style="border: none">
-                        <h3 align="center">Одежда</h3>
-                    </td>
-                </tr>
 
-                <tr>
-                    <td align="center">
-                        <a href="../card-img/longsliv1.jpg" target="_blank">
-                            <img src="../card-img/longsliv1.jpg" style="width: 200px; height: 300px; object-fit: cover; border-radius: 10%;">
-                        </a>
+        </form>
 
-                        <h4 align="center">Лонгслив хлопковый с принтом</h4>
+      <div class="header-actions">
 
-                        <h4 align="center">1999 Р.</h4>
-                            <!-- <details align="left">
-                                <summary><strong>Описание товара · состав · доставка</strong></summary>
-                                <p><strong>Цвет:</strong> серый • <strong>Код:</strong> 37</p>
-                                <p>- Мужской лонгслив прямого кроя из мягкой и дышащей 100% хлопковой ткани из коллекции Co:Create Сеанс</p>
-                                <p>- Сеанс — петербургский журнал о кино и времени. Совместную капсулу мы посвятили изменчивому и вечному городу, 
-                                    который стал идеальным фоном для съемок</p>
-                                <p>- Круглый вырез горловины без воротника. Длинные свободные рукава с прямыми манжетами и спущенной линией плеча. 
-                                    Прямой нижний край</p>
-                                <p>- Лонгслив с вышитой надписью спереди и принтом на спине. Легкая футболка с длинными рукавами для суперудобных 
-                                    кэжуал-луков с любимым расслабленным низом. Разбавь свои повседневные, спортивные или уличные аутфиты стильным 
-                                    лонгсливом y2k, который станет неотъемлемой частью гардероба благодаря его универсальности. 
-                                    Дышащий джемпер отлично подойдет для концертов, вечеринок и ивентов. Используй хлопковый лонгслив также в качестве удобной 
-                                    домашней одежды</p>
-                                <p>- Размер на модели: L</p>
-                                <p>- Параметры модели: рост 185, грудь 87, талия 73, бедра 89</p>
-                                <p>- Дополни лук брюками</p>
-                                <h4>Состав и уход</h4>
-                                <ul>
-                                    <li>Состав</li>
-                                    <ul>
-                                        <li>Хлопок 100%</li>
-                                    </ul>
-                                    <li>Вид застежки</li>
-                                    <ul>
-                                        <li>Без застёжки</li>
-                                    </ul>
-                                    <li>Рекомендации по уходу</li>
-                                    <ul>
-                                        <li>Бережная стирка при максимальной температуре 30ºС</li>
-                                        <li>Не отбеливать</li>
-                                        <li>Машинная сушка запрещена</li>
-                                        <li>Глажение при 110ºС</li>
-                                        <li>Профессиональная сухая чистка. Мягкий режим.</li>
-                                    </ul>
-                                </ul>
-                                <h4>Доставка и оплата</h4>
-                                <ul>
-                                    <li>Доставка</li>
-                                    <ul type="circle">
-                                        <li>Самовывоз</li>
-                                        <li>Пункт выдачи</li>
-                                        <li>Доставка курьером</li>
-                                    </ul>
-                                    <li>Оплата</li>
-                                    <ul type="circle">
-                                        <li>Подели — оплата по частям</li>
-                                        <li>Онлайн</li>
-                                        <li>По QR-коду</li>
-                                    </ul>
-                                </ul>
-                            </details> -->
-                    </td>
+        <a href="login.html" class="header-login btn btn-outline-primary btn-sm">Вход</a>
 
-                    <td align="center">
-                        <a href="../card-img/jeans1.jpg" target="_blank">
-                            <img src="../card-img/jeans1.jpg" style="width: 200px; height: 300px; object-fit: cover; border-radius: 10%;">
-                        </a>
+        <a href="register.html" class="btn btn-primary btn-sm ms-1">Регистрация</a>
 
-                        <h4 align="center">Брюки широкие с кожаной фактурой</h4>
+        <!-- profile icon removed -->
 
-                        <h4 align="center">3599 Р.</h4>
-                            <!-- <details align="left">
-                                <summary><strong>Описание товара · состав · доставка</strong></summary>
-                                <p><strong>Цвет:</strong> коричневый • <strong>Код:</strong> 20</p>
-                                <p>- Широкие мужские брюки из гладкой искусственной кожи с мягким внутренним слоем из вискозы из коллекции Co:Create Сеанс</p>
-                                <p>- Сеанс — петербургский журнал о кино и времени. Совместную капсулу мы посвятили изменчивому и вечному городу, 
-                                    который стал идеальным фоном для съемок</p>
-                                <p>- Средняя посадка. Широкие свободные штанины. Два боковых кармана, два больших кармана сзади. 
-                                    Застежка на молнию и пуговицу спереди, шлевки для ремня</p>
-                                <p>- Мужские брюки из линейки уличной одежды. Кожаная фактура широких брюк впишется в свободные street-аутфиты. 
-                                    В повседневные луки широкие штаны добавят нотку дерзости и помогут разбавить более строгие образы на каждый день. 
-                                    Подойдут для любой погоды и повода</p>
-                                <p>- Размер на модели: L</p>
-                                <p>- Параметры модели: рост 185, грудь 87, талия 73, бедра 89</p>
-                                <p>- Дополни лук лонгсливом</p>
-                                <h4>Состав и уход</h4>
-                                <ul>
-                                    <li>Состав</li>
-                                    <ul>
-                                        <li>Вискоза 100%</li>
-                                    </ul>
-                                    <li>Верх</li>
-                                    <ul>
-                                        <li>Полиуретан 100%</li>
-                                    </ul>
-                                    <li>Утеплитель</li>
-                                    <ul>
-                                        <li>Без утепления</li>
-                                    </ul> 
-                                    <li>Вид застежки</li>
-                                    <ul>
-                                        <li>Молния</li>
-                                    </ul>
-                                    <li>Рекомендации по уходу</li>
-                                    <ul>
-                                        <li>Не стирать</li>
-                                        <li>Не отбеливать</li>
-                                        <li>Машинная сушка запрещена</li>
-                                        <li>Не гладить</li>
-                                        <li>Профессиональная мокрая чистка. Мягкий режим.</li>
-                                    </ul>
-                                </ul>
-                                <h4>Доставка и оплата</h4>
-                                <ul>
-                                    <li>Доставка</li>
-                                    <ul type="circle">
-                                        <li>Самовывоз</li>
-                                        <li>Пункт выдачи</li>
-                                        <li>Доставка курьером</li>
-                                    </ul>
-                                    <li>Оплата</li>
-                                    <ul type="circle">
-                                        <li>Подели — оплата по частям</li>
-                                        <li>Онлайн</li>
-                                        <li>По QR-коду</li>
-                                    </ul>
-                                </ul>
-                            </details> -->
-                    </td>
+      </div>
 
-                    <td align="center">
-                        <a href="../card-img/footbolka1.jpg" target="_blank">
-                            <img src="../card-img/footbolka1.jpg" style="width: 200px; height: 300px; object-fit: cover; border-radius: 10%;">
-                        </a>
+    </div>
 
-                        <h4 align="center">Футболка с принтом и окантовкой</h4>
+  </header>
 
-                        <h4 align="center">1599 Р.</h4>
-                            <!-- <details align="left">
-                                <summary><strong>Описание товара · состав · доставка</strong></summary>
-                                <p><strong>Цвет:</strong> бордовый • <strong>Код:</strong> 72</p>
-                                <p>- Мужская футболка прямого кроя из мягкой и дышащей 100% хлопковой ткани высокой плотности</p>
-                                <p>- Круглый вырез горловины без воротника. Короткие свободные рукава с прямыми манжетами и прямой линией плеча. 
-                                    Прямой нижний край без разрезов и декоративных элементов</p>
-                                <p>- Хлопковая футболка с принтом, окантовкой и вареным эффектом для суперудобных кэжуал-луков с любимым низом. 
-                                    Разбавь свои повседневные, спортивные или уличные аутфиты стильной футболкой. 
-                                    Свободная хлопковая футболка с потертым принтом для расслабленных повседневных луков, в которых тебе будет максимально комфортно. 
-                                    Хлопковая футболка в винтажном стиле подойдет для создания образов на концерт, ивент или вечеринку. 
-                                    Носи ее отдельно или в составе многослойных образов </p>
-                                <p>- Размер на модели: L</p>
-                                <h4>Состав и уход</h4>
-                                <ul>
-                                    <li>Состав</li>
-                                    <ul>
-                                        <li>Хлопок 100%</li>
-                                    </ul>
-                                    <li>Плотность ткани</li>
-                                    <ul>
-                                        <li>200 г/м²</li>
-                                    </ul>
-                                    <li>Рекомендации по уходу</li>
-                                    <ul>
-                                        <li>Бережная стирка при максимальной температуре 30ºС</li>
-                                        <li>Не отбеливать</li>
-                                        <li>Машинная сушка запрещена</li>
-                                        <li>Глажение при 110ºС</li>
-                                        <li>Профессиональная сухая чистка. Мягкий режим.</li>
-                                    </ul>
-                                </ul>
-                                <h4>Доставка и оплата</h4>
-                                <ul>
-                                    <li>Доставка</li>
-                                    <ul type="circle">
-                                        <li>Самовывоз</li>
-                                        <li>Пункт выдачи</li>
-                                        <li>Доставка курьером</li>
-                                    </ul>
-                                    <li>Оплата</li>
-                                    <ul type="circle">
-                                        <li>Подели — оплата по частям</li>
-                                        <li>Онлайн</li>
-                                        <li>По QR-коду</li>
-                                    </ul>
-                                </ul>
-                            </details> -->
-                    </td>
-                </tr>
 
-                <tr>
-                    <td colspan=3 style="border: none">
-                        <h3 align="center">Обувь</h3>
-                    </td>
-                </tr>
 
-                <tr>
-                    <td align="center">
-                        <a href="../card-img/kedi2.jpg" target="_blank">
-                            <img src="../card-img/kedi2.jpg" style="width: 200px; height: 300px; object-fit: cover; border-radius: 10%;">
-                        </a>
+  <nav class="site-nav" role="navigation" aria-label="Основное меню">
 
-                        <h4 align="center">Кеды на высокой подошве</h4>
+    <div class="container">
 
-                        <h4 align="center">1299 Р.</h4>
-                    </td>
+      <ul class="nav-menu">
 
-                    <td align="center">
-                        <a href="../card-img/botinki2.jpg" target="_blank">
-                            <img src="../card-img/botinki2.jpg" style="width: 200px; height: 300px; object-fit: cover; border-radius: 10%;">
-                        </a>
+        <li><a href="catalog.html">Каталог</a></li>
 
-                        <h4 align="center">Ботинки унисекс из натуральной замши</h4>
+        <li><a href="about.html">О нас</a></li>
 
-                        <h4 align="center">7599 Р.</h4>
-                    </td>
+        <li><a href="contacts.html">Контакты</a></li>
 
-                    <td align="center">
-                        <a href="../card-img/uggi2.jpg" target="_blank">
-                            <img src="../card-img/uggi2.jpg" style="width: 200px; height: 300px; object-fit: cover; border-radius: 10%;">
-                        </a>
+      </ul>
 
-                        <h4 align="center">Ботинки-угги унисекс из натуральной замши</h4>
+    </div>
 
-                        <h4 align="center">3599 Р.</h4>
-                    </td>
-                </tr>
+  </nav>
 
-                <tr>
-                    <td colspan=3 style="border: none">
-                        <h3 align="center">Аксессуары</h3>
-                    </td>
-                </tr>
 
-                <tr>
-                    <td align="center">
-                        <a href="../card-img/sumka3.jpg" target="_blank">
-                            <img src="../card-img/sumka3.jpg" style="width: 200px; height: 300px; object-fit: cover; border-radius: 10%;">
-                        </a>
 
-                        <h4 align="center">Сумка-барсетка текстильная</h4>
+    <!-- Hero categories -->
 
-                        <h4 align="center">999 Р.</h4>
-                    </td>
+    <div class="catalog-hero container">
 
-                    <td align="center">
-                        <a href="../card-img/cepochka3.jpg" target="_blank">
-                            <img src="../card-img/cepochka3.jpg" style="width: 200px; height: 300px; object-fit: cover; border-radius: 10%;">
-                        </a>
+        <a href="clothing.html" class="cat-card" aria-label="Одежда - перейти к разделу Одежда">
 
-                        <h4 align="center">Цепочка на шею с функциональной подвеской</h4>
+          <img src="../card-img/longsliv11.jpg" alt="Одежда" class="cat-image">
 
-                        <h4 align="center">899 Р.</h4>
-                    </td>
+          <div class="cat-label">Одежда</div>
 
-                    <td align="center">
-                        <a href="../card-img/kepka3.jpg" target="_blank">
-                            <img src="../card-img/kepka3.jpg" style="width: 200px; height: 300px; object-fit: cover; border-radius: 10%;">
-                        </a>
+        </a>
 
-                        <h4 align="center">Бейсболка хлопковая с вышивкой</h4>
+        <a href="footwear.html" class="cat-card" aria-label="Обувь - перейти к разделу Обувь">
 
-                        <h4 align="center">599 Р.</h4>
-                    </td>
-                </tr>
-            </table>
-        <BR><br>
-        </td>
-    </tr>
-</table>
+          <img src="../card-img/kedi11.jpg" alt="Обувь" class="cat-image">
 
-<footer>
-    <table border="0" width="900" cellpadding="0" cellspacing="0" align="center" bgcolor="#99ff99">
-        <tr>
-            <td align="center"><h3>© Все права защищены</h3></td>
-            <td><a href="#0">Вернуться на верх</a></td>
-        </tr>
-    </table>
-</footer>
+          <div class="cat-label">Обувь</div>
+
+        </a>
+
+        <a href="accessories.html" class="cat-card" aria-label="Аксессуары - перейти к разделу Аксессуары">
+
+          <img src="../card-img/sumka11.jpg" alt="Аксессуары" class="cat-image">
+
+          <div class="cat-label">Аксессуары</div>
+
+        </a>
+
+    </div>
+
+    <footer class="site-footer" role="contentinfo">
+
+        <div class="container">
+
+            <div class="footer-inner">
+
+                <h3>© Все права защищены</h3>
+
+                <a href="#top">Вернуться на верх</a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
+
