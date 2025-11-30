@@ -92,7 +92,7 @@
 
                     <label for="password" class="col-sm-3 col-form-label text-end">Пароль</label>
 
-                    <div class="col-sm-9"><input id="password" name="password" type="password" class="form-control" placeholder="Пароль"></div>
+                    <div class="col-sm-9"><input id="password" name="password" type="password" class="form-control" placeholder="Пароль" required oninvalid="this.setCustomValidity('Введите пароль')" oninput="this.setCustomValidity('')"></div>
 
                 </div>
 
