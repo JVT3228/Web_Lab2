@@ -135,8 +135,12 @@ h4{font-size:16px;margin:8px 0;font-weight:500}
 .contacts-form .form-check{display:inline-flex;align-items:center;gap:8px}
 
 /* Footer */
+/* Keep legacy table-based footer dark styling */
 footer table{background:#000 !important;color:#fff;border-radius:0 0 8px 8px}
-footer a{color:#fff}
+/* Ensure links inside legacy footer table remain white */
+footer table a{color:#fff}
+/* Site-wide footer (.site-footer) uses card background; ensure links are visible */
+.site-footer a{color:var(--text)}
 
 /* Page content wrapper for consistent inner spacing */
 .page-content{padding:18px}
@@ -249,6 +253,28 @@ ul.no-bullet{list-style:none;margin-left:0;padding-left:0}
 /* Sidebar CSS cleaned up */
 .site-footer{background:var(--card-bg);padding:14px 18px;border-top:1px solid rgba(0,0,0,0.04)}
 .site-footer .footer-inner{display:flex;gap:8px;align-items:center;justify-content:center}
+
+/* Helper layout for index/main pages */
+.main-layout{display:grid;grid-template-columns:220px 1fr;gap:28px;align-items:start}
+.site-aside{padding:8px}
+.site-aside a{display:inline-block;padding:6px 0;color:var(--muted)}
+.main-content{padding:18px}
+
+/* Company stats grid (replaces old table) */
+.company-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.company-stat{background:linear-gradient(180deg,#fff,#fafafa);border:1px solid #f1f1f1;border-radius:8px;padding:12px;text-align:center}
+.company-stat--wide{grid-column:1 / -1;font-size:18px;font-weight:700;padding:18px}
+.stat-value{font-size:18px;font-weight:700}
+.stat-label{font-size:13px;color:var(--muted)}
+
+/* Footer inner container */
+.site-footer-inner{display:flex;gap:12px;align-items:center;justify-content:center;padding:12px}
+
+@media(max-width:950px){
+  .main-layout{grid-template-columns:1fr;gap:14px}
+  .company-stats{grid-template-columns:1fr}
+  .company-stat--wide{grid-column:auto}
+}
 
 /* Category hero cards */
 .catalog-hero{max-width:1200px;margin:12px auto;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}

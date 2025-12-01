@@ -22,9 +22,24 @@
 
     <div class="container"> 
 
-            <div class="brand"><a href="catalog.html"><img src="../img/logo.png" alt="Logo"></a></div>
+        <div class="brand"><a href="index.html"><img src="../img/logo.png" alt="Logo"></a></div>
 
-        
+                  
+        <form class="header-search" action="" method="get" role="search" aria-label="Поиск">
+
+            <div class="input-group">
+
+                <input class="form-control header-input" name="q" type="search" placeholder="Поиск по каталогу" aria-label="Поиск по каталогу">
+
+                <button class="btn btn-light header-search-btn" type="submit" aria-label="Поиск">
+
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+                </button>
+
+            </div>
+
+        </form>
 
         <div class="header-actions">
 
@@ -45,9 +60,9 @@
 
         <ul class="nav-menu">
 
+            <li><a href="index.html">Главная</a></li>
             <li><a href="catalog.html">Каталог</a></li>
             <li><a href="about.html">О нас</a></li>
-
             <li><a href="contacts.html">Контакты</a></li>
 
         </ul>
@@ -92,7 +107,7 @@
 
 <footer class="site-footer" role="contentinfo">
 
-    <div class="container"><div class="footer-inner"><h3>© Все права защищены</h3></div></div>
+    <div class="container"><div class="footer-inner"><h3><a href="user-agreement.html">© Все права защищены</a></h3></div></div>
 
 </footer>
 
