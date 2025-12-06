@@ -74,29 +74,8 @@
 
       <div class="page-content"><h1>Обувь</h1>
 
-        <div class="catalog-grid">
-
-          <article class="product-card">
-            <a href="product-footwear-1.html"><img src="../card-img/kedi11.jpg" class="product-photo" alt="Кеды"></a>
-            <h4 class="product-name"><a href="product-footwear-1.html">Кеды городские</a></h4>
-            <div class="product-price">2599 ₽</div>
-            <div class="card-actions"><button class="btn btn-sm btn-primary">Купить</button><a href="product-footwear-1.html" class="btn btn-sm btn-outline-secondary ms-2">Подробнее</a></div>
-          </article>
-
-          <article class="product-card">
-            <a href="product-footwear-2.html"><img src="../card-img/botinki11.jpg" class="product-photo" alt="Ботинки"></a>
-            <h4 class="product-name"><a href="product-footwear-2.html">Ботинки с прошивкой</a></h4>
-            <div class="product-price">4999 ₽</div>
-            <div class="card-actions"><button class="btn btn-sm btn-primary">Купить</button><a href="product-footwear-2.html" class="btn btn-sm btn-outline-secondary ms-2">Подробнее</a></div>
-          </article>
-
-          <article class="product-card">
-            <a href="product-footwear-3.html"><img src="../card-img/uggi11.jpg" class="product-photo" alt="Угги"></a>
-            <h4 class="product-name"><a href="product-footwear-3.html">Угги тёплые с мехом</a></h4>
-            <div class="product-price">3999 ₽</div>
-            <div class="card-actions"><button class="btn btn-sm btn-primary">Купить</button><a href="product-footwear-3.html" class="btn btn-sm btn-outline-secondary ms-2">Подробнее</a></div>
-          </article>
-
+        <div class="catalog-grid" id="products-grid">
+          <!-- Товары будут загружены здесь -->
         </div>
 
       </div>
@@ -116,7 +95,18 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="scripts.js"></script>
+  <script src="products.js"></script>
+  <script src="components.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const grid = document.getElementById('products-grid');
+      const products = getProductsByCategory('footwear');
+      
+      products.forEach(product => {
+        grid.appendChild(renderProductCard(product, 'footwear'));
+      });
+    });
+  </script>
 
 </body>
 
